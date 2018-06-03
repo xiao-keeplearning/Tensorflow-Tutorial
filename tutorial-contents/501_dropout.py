@@ -20,7 +20,7 @@ N_HIDDEN = 300
 LR = 0.01
 
 # training data
-x = np.linspace(-1, 1, N_SAMPLES)[:, np.newaxis]
+x = np.linspace(-1, 1, N_SAMPLES)[:, np.newaxis]  #np.linspace()类似range;np.newaxis是为了增加维度；此时x.shape=(1,5)
 y = x + 0.3*np.random.randn(N_SAMPLES)[:, np.newaxis]
 
 # test data
